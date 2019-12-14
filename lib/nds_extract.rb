@@ -27,7 +27,7 @@ end
 # using director_data as input
 def gross_for_director(director_hash)
   # RETURNS AN INTEGER
-  binding.pry
+  # binding.pry
   m = 0
   dir_total = 0
   while m < director_hash[:movies].length do
