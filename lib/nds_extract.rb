@@ -30,13 +30,13 @@ def gross_for_director(director_hash)
   binding.pry
   m = 0
   dir_total = 0
-  while m < nds[d][:movies].length do
+  while m < director_hash[:movies].length do
     # this iterates through each movie
     # and adds the gross to a total director-specific gross
-    dir_total += nds[d][:movies][m][:worldwide_gross]
+    dir_total += director_hash[:movies][m][:worldwide_gross]
     m += 1
   end
-  p "#{dir_total} is the total for #{nds[d][:name]}"
+  p "#{dir_total} is the total for #{director_hash[:name]}"
   dir_total
 end
 
