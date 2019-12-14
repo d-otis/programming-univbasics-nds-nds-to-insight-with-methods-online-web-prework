@@ -13,7 +13,7 @@ def directors_totals(nds)
   d = 0
   results = {}
   while d < nds.length do
-    director_hash = nds[]
+    director_hash = nds[d][:movies]
     results[nds[d][:name]] = gross_for_director(nds, d)
     # binding.pry
     d += 1
