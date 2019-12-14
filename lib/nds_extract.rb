@@ -24,7 +24,7 @@ end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(nds, d)
+def gross_for_director(director_hash)
   # RETURNS AN INTEGER
   m = 0
   dir_total = 0
