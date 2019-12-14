@@ -4,6 +4,27 @@ require 'directors_database'
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+# _  _ ___ _____           
+# / \|_) | /__ | |\ | /\ |  
+# \_/| \_|_\_|_|_| \|/--\|_ 
+
+def directors_totals(nds)
+  d = 0
+  results = {}
+  while d < nds.length do
+    m = 0
+    total = 0
+    while m < nds[d][:movies].length do
+      # puts nds[d][:movies][m][:worldwide_gross]
+      total += nds[d][:movies][m][:worldwide_gross]
+      m += 1
+    end
+    results[nds[d][:name]] = total
+    # binding.pry
+    d += 1
+  end
+  results
+end
 
 def directors_totals(nds)
   result = {}
