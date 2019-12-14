@@ -1,4 +1,4 @@
-require 'directors_database.rb'
+require_relative 'directors_database.rb'
 require 'pry'
 
 # Write a method that, given an NDS creates a new Hash
